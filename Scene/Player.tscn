@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6v1xsi3tvl4n"]
+[gd_scene load_steps=4 format=3 uid="uid://b6v1xsi3tvl4n"]
+
+[ext_resource type="Script" uid="uid://cvl6i0ko57d7q" path="res://Scripts/player.gd" id="1_6l3be"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j8lcb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6l3be"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_6l3be")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j8lcb")
